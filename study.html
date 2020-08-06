@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proffy | Sua plataforma de estudos online</title>
+
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/partials/page-study.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
+    />
+  </head>
+  <body id="page-study">
+    <div id="container">
+      <header class="page-header">
+        <div class="top-bar-container">
+          <a href="/">
+            <img src="/images/icons/back.svg" alt="Voltar" />
+          </a>
+          <img src="/images/logo.svg" alt="Proffy" />
+        </div>
+        <div class="header-content">
+          <strong> Esses são os proffy's disponíveis</strong>
+          <form id="search-teachers">
+            <div class="select-block">
+              <label for="subject">Matéria</label>
+              <select name="subject" id="subject">
+                <option value="" disabled="" hidden=""
+                  >Selecione uma opção</option
+                >
+                <option value="1">Artes</option>
+                <option value="2">Biologia</option>
+                <option value="3">Ciências</option>
+                <option value="4">Educação Física</option>
+                <option value="5">Física</option>
+                <option value="6">Geografia</option>
+                <option value="7">História</option>
+                <option value="8">Inglês</option>
+                <option value="9">Matemática</option>
+                <option value="10">Português</option>
+                <option value="11">Química</option>
+              </select>
+            </div>
+            <div class="select-block">
+              <label for="weekday">Dia da Semana</label>
+              <select name="weekday" id="weekday">
+                <option value="" disabled="" hidden=""
+                  >Selecione uma opção</option
+                >
+                <option value="0">Domingo</option>
+                <option value="1">Segunda-Feira</option>
+                <option value="2">Terça-Feira</option>
+                <option value="3">Quarta-Feira</option>
+                <option value="4">Quinta-Feira</option>
+                <option value="5">Sexta-Feira</option>
+                <option value="6">Sábado</option>
+              </select>
+            </div>
+            <div class="input-block">
+              <label for="time">Hora</label>
+              <input type="time" name="time" id="time" />
+            </div>
+            <button type="submite">Filtrar</button>
+          </form>
+        </div>
+      </header>
+      <main>
+        <article class="teacher-item">
+          <header>
+            <img src="/images/gustavoquimica.jpg" alt="Química" />
+            <div>
+              <strong>Gustavo</strong>
+              <span>Química</span>
+            </div>
+          </header>
+          <p>Sou graduado em Química com experiencia rede pública de Ensino e assistência com estudantes em sala de reforço. 
+            Trabalho com listas de exercícios atividades em grupos visando a memorização de conteúdos relevantes a disciplina em questão.
+            A metodologia seguida é de dialogo em grupo em situações historico e atuais, focando na importância da química na evolução da sociedade e no cidadão, 
+            não deixando de reforçar as habilidades de cálculos e interpretação de texto e conteúdos dos principais exames vestibulares e Enem.         
+          </p>
+          <footer>
+            <p>Preço/Hora<strong>R$20,00</strong></p>
+            <button type="button">
+              <img src="/images/icons/whatsapp.svg" alt="whatsapp" />Entrar em
+              contato
+            </button>
+          </footer>
+        </article>
+
+
+        <article class="teacher-item">
+          <header>
+            <img src="/images/milenaingles.jpg" alt="ingles" />
+            <div>
+              <strong>Milena</strong>
+              <span>Inglês</span>
+            </div>
+          </header>
+          <p>Licenciada em Letras Inglês,Procuro falar somente em inglês nas minhas aulas. Acredito que isso ajude o aluno a melhorar sua compreensão, sua auto-confiança e entrar em contato com a língua de maneira mais rápida e direta. Isso não me impede de dar aulas para alunos do nível básico. Tenho material, experiência, didática e posso falar em português durante a aula.
+            Gosto de preparar aulas levando em consideração o motivo pelo qual o aluno buscou esse tipo de ajuda e adequar a metodologia ao que ele precisa.
+            Prezo por um ambiente divertido, porém com foco e dedicação.</p>
+          <footer>
+            <p>Preço/Hora<strong>R$60,00</strong></p>
+            <button type="button">
+              <img src="/images/icons/whatsapp.svg" alt="whatsapp" />Entrar em
+              contato
+            </button>
+          </footer>
+        </article>
+
+
+        <article class="teacher-item">
+          <header>
+            <img src="/images/cristinamatematica.jpg" alt="matematica" />
+            <div>
+              <strong>Cristina</strong>
+              <span>Matemática</span>
+            </div>
+          </header>
+          <p>Dou aulas desde a minha graduação em Matemática, sendo, portanto, 6 anos de experiência com aulas particulares individuais e em grupos - para alunos de Ensino Fundamental I e II, Médio e Superior.
+
+            No mestrado, fui tutora em sala de aula com cerca de 15 alunos para uma disciplina de graduação (Geometria Diferencial) voltada para físicos, matemáticos e engenheiros. Então também sei lidar com grupos de estudos relativamente grandes.
+            
+            Também fui professora voluntária de Matemática num cursinho popular em uma aldeia indígena, voltado para preparação de pré-vestibular, ENEM e Fuvest.</p>
+          <footer>
+            <p>Preço/Hora<strong>R$100,00</strong></p>
+            <button type="button">
+              <img src="/images/icons/whatsapp.svg" alt="whatsapp" />Entrar em
+              contato
+            </button>
+          </footer>
+        </article>
+
+      </main>
+    </div>
+  </body>
+</html>

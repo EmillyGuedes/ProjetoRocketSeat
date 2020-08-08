@@ -13,16 +13,56 @@ const proffys = [
   },
 ];
 
+const subjects = [
+                "Artes",
+                "Educação Física",
+                "Biologia",
+                "Física",
+                "Ciências",
+                "Geografia",
+                "História",
+                "Inglês",
+                "Matemática",
+                "Português",
+                "Química"
+]
+
+const weekdays = [
+  "Domingo",
+  "Segunda-Feira",
+  "Terça-Feira",
+  "Quarta-Feira",
+  "Quinta-Feira",
+  "Sexta-Feira",
+  "Sábado"
+]
+
+function getSubject(subjectNumber) {
+  const position = +subjectNumber -1
+  return subjects[position]
+}
+
+
 function pageLanding(req, res) {
   return res.render("index.html");
 }
 
 function pageStudy(req, res) {
-  return res.render("study.html", {proffys});
+  const filters = req.query
+  return res.render("study.html", {proffys, filters, subjects, weekdays});
 }
 
 function pageGiveClasses(req, res) {
-  return res.render("give-classes.html");
+  const dados = req.query
+  const isNotEmpty = Object.keys(dados).length > 0
+  if (isNotEmpty) {
+    data.subject= getSubject(data.subject)
+    proffys.push(dados)
+
+    return res.redirect("/study")
+  }
+  
+  return res.render("give-classes.html", {subjects, weekdays});
 }
 
 const express = require("express");

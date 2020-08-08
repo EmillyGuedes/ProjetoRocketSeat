@@ -73,71 +73,27 @@
       </header>
       
       <main>
+
+        {%for proffy in proffys %}
         <article class="teacher-item">
           <header>
-            <img src="/images/gustavoquimica.jpg" alt="Química" />
+            <img src="{{proffy.avatar}}" alt="{{proffy.name}}" />
             <div>
-              <strong>Gustavo</strong>
-              <span>Química</span>
+              <strong>{{proffy.name}}</strong>
+              <span>{{proffy.subject}}</span>
             </div>
           </header>
-          <p>Sou graduado em Química com experiencia rede pública de Ensino e assistência com estudantes em sala de reforço. 
-            Trabalho com listas de exercícios atividades em grupos visando a memorização de conteúdos relevantes a disciplina em questão.
-            A metodologia seguida é de dialogo em grupo em situações historico e atuais, focando na importância da química na evolução da sociedade e no cidadão, 
-            não deixando de reforçar as habilidades de cálculos e interpretação de texto e conteúdos dos principais exames vestibulares e Enem.         
+          <p>{{proffy.bio}}        
           </p>
           <footer>
-            <p>Preço/Hora<strong>R$20,00</strong></p>
-            <button type="button">
-              <img src="/images/icons/whatsapp.svg" alt="whatsapp" />Entrar em
-              contato
-            </button>
+            <p>Preço/Hora<strong>R$ {{proffy.cost}}</strong></p>
+           
+          <a href="https://api.whatsapp.com/send?l=pt_BR&phone=55{{teacher.whatsapp}}&text=Tenho interesse na sua aula de {{proffy.subject}}, professor {{teacher.name}}" class="button" target="_blank"><img src="/images/icons/whatsapp.svg" alt="whatsapp">Entrar em contato.</a>
           </footer>
         </article>
+        {%endfor%}
+        
 
-
-        <article class="teacher-item">
-          <header>
-            <img src="/images/milenaingles.jpg" alt="ingles" />
-            <div>
-              <strong>Milena</strong>
-              <span>Inglês</span>
-            </div>
-          </header>
-          <p>Licenciada em Letras Inglês,Procuro falar somente em inglês nas minhas aulas. Acredito que isso ajude o aluno a melhorar sua compreensão, sua auto-confiança e entrar em contato com a língua de maneira mais rápida e direta. Isso não me impede de dar aulas para alunos do nível básico. Tenho material, experiência, didática e posso falar em português durante a aula.
-            Gosto de preparar aulas levando em consideração o motivo pelo qual o aluno buscou esse tipo de ajuda e adequar a metodologia ao que ele precisa.
-            Prezo por um ambiente divertido, porém com foco e dedicação.</p>
-          <footer>
-            <p>Preço/Hora<strong>R$60,00</strong></p>
-            <button type="button">
-              <img src="/images/icons/whatsapp.svg" alt="whatsapp" />Entrar em
-              contato
-            </button>
-          </footer>
-        </article>
-
-
-        <article class="teacher-item">
-          <header>
-            <img src="/images/cristinamatematica.jpg" alt="matematica" />
-            <div>
-              <strong>Cristina</strong>
-              <span>Matemática</span>
-            </div>
-          </header>
-          <p>Dou aulas desde a minha graduação em Matemática, sendo, portanto, 6 anos de experiência com aulas particulares individuais e em grupos - para alunos de Ensino Fundamental I e II, Médio e Superior.
-
-            No mestrado, fui tutora em sala de aula com cerca de 15 alunos para uma disciplina de graduação (Geometria Diferencial) voltada para físicos, matemáticos e engenheiros. Então também sei lidar com grupos de estudos relativamente grandes.
-            
-            Também fui professora voluntária de Matemática num cursinho popular em uma aldeia indígena, voltado para preparação de pré-vestibular, ENEM e Fuvest.</p>
-          <footer>
-            <p>Preço/Hora<strong>R$100,00</strong></p>
-            <button type="button">
-              <img src="/images/icons/whatsapp.svg" alt="whatsapp" />Entrar em
-              contato
-            </button>
-          </footer>
-        </article>
         
       </main>
     </div>
